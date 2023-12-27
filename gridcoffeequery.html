@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Grid coffee with with media queries</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        body{
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+      .box{
+        background-image:url(/white\ background.jfif) ;
+        width: 100%;
+        height: auto;
+        display: grid;
+        grid-template-columns: repeat(3,1fr);
+        gap: 10px;
+        padding-left: 100px;
+        padding-right: 100px;
+        padding-top: 10px;
+        padding-bottom: 10px;
+      }
+      .info{
+        display: flex;
+        justify-content: space-between;
+        align-items: center;
+        padding-top: 5px;
+        padding-bottom: 5px;
+      }
+      .coffee{
+        background-color: white;
+        border-radius: 10px;
+        box-shadow: rgba(100, 100, 111, 0.2) 0px 7px 29px 0px;
+        padding: 10px;
+      }
+      .desc{
+        font-family:Verdana, Geneva, Tahoma, sans-serif;
+      }
+      .child{
+        font-family:Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+      }
+      @media all and (min-width:550px) and (max-width:700px) {
+         .box{
+            grid-template-columns: repeat(2,1fr);
+         }       
+      }
+      @media all and (max-width:550px) {
+         .box{
+            grid-template-columns: repeat(1,1fr);
+         }       
+      }
+    </style>
+</head>
+<body>
+    <div class="box">
+        <div class="coffee">
+           <div class="info">
+            <div class="child">Cappucino</div>
+            <div style="color: gold;" class="child">$49</div>
+           </div>
+           <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque.</div>
+        </div>
+
+        <div class="coffee">
+           <div class="info">
+            <div class="child">Americano</div>
+            <div style="color: gold;" class="child">$49</div>
+           </div>
+           <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque.</div>
+        </div>
+
+        <div class="coffee">
+           <div class="info">
+            <div class="child">Espresso</div>
+            <div style="color: gold;" class="child">$49</div>
+           </div>
+           <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque.</div>
+        </div>
+
+        <div class="coffee">
+           <div class="info">
+            <div class="child">Macchiato</div>
+            <div style="color: gold;" class="child">$49</div>
+           </div>
+           <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque.</div>
+        </div>
+
+        <div class="coffee">
+           <div class="info">
+            <div class="child">Mocha</div>
+            <div style="color: gold;" class="child">$49</div>
+           </div>
+           <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque.</div>
+        </div>
+
+        <div class="coffee">
+           <div class="info">
+            <div class="child">Coffee Latte</div>
+            <div style="color: gold;" class="child">$49</div>
+           </div>
+           <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque.</div>
+        </div>
+
+        <div class="coffee">
+           <div class="info">
+            <div class="child">Piccolo Latte</div>
+            <div style="color: gold;" class="child">$49</div>
+           </div>
+           <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque.</div>
+        </div>
+
+        <div class="coffee">
+           <div class="info">
+            <div class="child">Ristretto</div>
+            <div style="color: gold;" class="child">$49</div>
+           </div>
+           <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque.</div>
+        </div>
+
+        <div class="coffee">
+           <div class="info">
+            <div class="child">Affogoto</div>
+            <div style="color: gold;" class="child">$49</div>
+           </div>
+           <div class="desc">Lorem ipsum dolor sit amet consectetur adipisicing elit. Quaerat, atque.</div>
+        </div>
+
+    </div>
+</body>
+</html>
