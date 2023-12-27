@@ -1,41 +1,68 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
-        *{
+        * {
             margin: 0px;
         }
         .box{
-            width: 100%;
-            height: auto;
-            background-color: whitesmoke;
             display: flex;
-            justify-content: space-evenly;
-            align-items:baseline;
-            flex-wrap: wrap;
+            justify-content: space-between;
+            align-items: center;
+
+        }.box>ul{
+            display: flex;
+            flex-grow: 1;
+            justify-content: space-around;
+            align-items: center;
         }
-        span>button{
-            border-radius: 5px;
-            border-color: red;
+        .box>ul>li{
+            list-style: none;
         }
+
+        .box>ul>li>a{
+            text-decoration: none;
+            color: black;
+        }
+        #ref>button{
+            padding:10px;
+            border:none;
+            border-radius:5px;
+            color: blue;
+        }
+        #log>button{
+            padding:10px;
+            border:1px solid pink;
+            border-radius:5px;
+            color: pink;
+            margin: 10px;
+        }
+
     </style>
 </head>
+
 <body>
     <div class="box">
-      <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png" alt="MASAI">
-     
-      <span>COURSES</span>
-      <span>FEES & ISA</span>
-      <span>ABOUT US</span>
-      <span>HIRE FROM US</span>
-      <span>FAQ</span>
-      <span>EVENTS</span>
-      <span><button>REFER AND EARN</button></span>
-      <span><button>LOGIN</button></span>
+
+       <div> <img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png" alt="MASAI"></div>
+        
+        <ul>
+            <li><a href="#">COURSES</a></li>
+            <li><a href="#">FEES & ISA</a></li>
+            <li><a href="#">ABOUT US</a></li>
+            <li><a href="#">HIRE FROM US</a></li>
+            <li><a href="#">FAQ</a></li>
+            <li><a href="#">EVENTS</a></li>
+        </ul>
+
+        <div id="ref"><button>REFER AND EARN</button></div>
+        <div id="log"><button>LOGIN</button></div>
 
     </div>
 </body>
+
 </html>
