@@ -1,17 +1,139 @@
 <!DOCTYPE html>
 <html lang="en">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Document</title>
     <style>
+        .hamburger {
+            display: block;
+            cursor: pointer;
+            padding: 10px;
+            position: relative;
 
+        }
+
+        .hamburger .line {
+            width: 30px;
+            height: 3px;
+            background-color: #333;
+            margin: 6px 0;
+        }
+
+        .hamburger .options {
+            display: none;
+            position: absolute;
+            top: 40px;
+            right: 50px;
+            background-color: #fff;
+            box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+            padding: 10px;
+        }
+
+        .hamburger .options .option {
+            padding: 8px;
+            cursor: pointer;
+        }
+
+        .hamburger .options .option:hover {
+            background-color: #f0f0f0;
+        }
+
+        .hamburger:hover .options {
+            display: block;
+        }
+
+        .box {
+            display: flex;
+            justify-content: space-between;
+            align-items: center;
+        }
+        .child>ul{
+            list-style: none;
+            display: flex;
+            justify-content: space-around;
+            align-items: center;
+        }
+        .child>ul>li{
+           padding: 10px;
+           margin: 10px; 
+        }
+
+        @media all and (min-width:600px) {
+            .mid{
+                display: none;
+            }
+
+            .box {
+                display: flex;
+                justify-content: space-between;
+            }
+        }
+
+        @media all and (max-width:600px){
+            .box{
+                display: none;
+
+            }
+            .mid{
+                display:flex;
+                justify-content: space-between;
+            }
+        }
     </style>
 </head>
+
 <body>
-    <div class="logo"></div>
-    <div class="about"></div>
-    <div class="button"></div>
-    
+
+    <div class="box">
+
+        <div class="child">
+            <img style="width: 100px;"
+                src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUEwts4uoA2Zk4uGFSWayTNfoLgraSoxF2g&usqp=CAU"
+                alt="$">
+        </div>
+
+        <div class="child">
+            <ul>
+                <li>home</li>
+                <li>about</li>
+                <li>contact</li>
+            </ul>
+        </div>
+
+        <div class="child">
+            <button style="padding: 5px; border: 1px; border-radius: 5px; background-color: green;color: white;">Apply</button>
+        </div>
+
+
+    </div>
+
+
+    <div class="mid">
+          <div class="logo">
+            <img style="width: 100px;" src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQCUEwts4uoA2Zk4uGFSWayTNfoLgraSoxF2g&usqp=CAU" alt="#">
+          </div>
+
+        <div class="hamburger" onclick="toggleOptions()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="options" id="options">
+                <div class="option">home</div>
+                <div class="option">about</div>
+                <div class="option">contact</div>
+            </div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleOptions() {
+            var options = document.getElementById("options");
+            options.style.display = (options.style.display === "block") ? "none" : "block";
+        }
+    </script>
 </body>
+
 </html>
