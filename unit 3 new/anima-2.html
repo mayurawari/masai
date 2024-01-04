@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            color: white;
+            height: 150px;
+            width: 650px;
+            border: 1px solid black;
+            border-radius: 10px;
+            margin: 10px;
+            position: relative;
+            right: 300px;
+            background-image: linear-gradient(to right, darkblue, blue, skyblue);
+        }
+        @keyframes effect1{
+            0%{
+                translate: 0%;
+            }
+            100%{
+                translate: 50%;
+
+            }
+        }
+        @keyframes effect2{
+            0%{
+                translate: 0%;
+            }
+            100%{
+                translate: -50%;
+
+            }
+        }
+
+        #box-1{
+            position: relative;
+            right: 300px;
+            animation: forwards;
+            animation-name: effect1;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+        #box-2{
+            animation: forwards;
+            position: relative;
+            left: 70%;
+            animation-name: effect2;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+            
+        }
+        #box-3{
+            position: relative;
+            right: 300px;
+            animation: forwards;
+            animation-name: effect1;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+        #box-4{
+            animation: forwards;
+            position: relative;
+            left: 70%;
+            animation-name: effect2;
+            animation-duration: 1s;
+            animation-iteration-count: 1;
+        }
+    </style>
+</head>
+
+<body>
+    <div id="box-1" class="box">Box-1</div>
+    <div id="box-2" class="box">Box-2</div>
+    <div id="box-3" class="box">Box-3</div>
+    <div id="box-4" class="box">Box-4</div>
+</body>
+
+</html>
