@@ -1,0 +1,105 @@
+*{
+    margin: 100px;
+}
+.rotate-45{
+    font-size: xx-large;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, darkblue, blue,skyblue);
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    transform: rotate(45deg);
+}
+.rotate-90{
+    font-size: xx-large;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, darkblue, blue,skyblue);
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    transform: rotate(90deg);
+}
+.rotate-180{
+    font-size: xx-large;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, darkblue, blue,skyblue);
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    transform: rotate(rotate-180);
+}
+.rotate-270{
+    font-size: xx-large;
+    font-weight: bolder;
+    background-image: linear-gradient(to right, darkblue, blue,skyblue);
+    border: 1px solid;
+    width: 200px;
+    height: 200px;
+    transform: rotate(270deg);
+}
+
+@mixin translate($h:200px,$w:200px,$br:1px solid){
+    height: $h;
+    width: $w;
+    border:$br;
+    background-image: linear-gradient(to right, darkblue, blue,skyblue);
+    font-size: xx-large;
+    font-weight: bolder;
+}
+@for $i from 1 through 8 {
+    .translateX-#{$i} {
+      transform: translateX(4px*$i);
+     @include translate();
+    }
+    .translateY-#{$i} {
+        transform: translateY(4px*$i);
+       @include translate();
+      }
+  }
+@for $i from 1 through 10 {
+    .scaleX-#{$i} {
+        @if $i==1 {
+         transform: scaleX(1.1px);
+        }
+        @else{
+            transform: scaleX(1.1*$i - $i);
+        }
+     @include translate();
+    }
+  }
+@for $i from 1 through 10 {
+    .scaleY-#{$i} {
+        @if $i==1 {
+         transform: scaleY(1.1px);
+        }
+        @else{
+            transform: scaleY(1.1*$i - $i);
+        }
+     @include translate();
+    }
+  }
+
+
+
+@for $i from 1 through 3 {
+    .scale-X-#{$i} {
+        @if $i==1 {
+         transform: scaleX(1.1px);
+        }
+        @else{
+            transform: scaleX(1.1*$i - $i);
+        }
+     @include translate();
+    }
+  }
+@for $i from 1 through 3 {
+    .scale-Y-#{$i} {
+        @if $i==1 {
+         transform: scaleY(1.1px);
+        }
+        @else{
+            transform: scaleY(1.1*$i - $i);
+        }
+     @include translate();
+    }
+  }
