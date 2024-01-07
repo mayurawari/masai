@@ -1,0 +1,196 @@
+$color1: rgb(49, 50, 44);
+$color2: rgb(57, 160, 237);
+$color3: rgb(31, 192, 157);
+$color4: rgb(76, 96, 133);
+
+.block {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-image: linear-gradient(to right, $color3, $color2);
+
+    .box {
+        margin-top: 100px;
+        margin-bottom: 100px;
+        display: grid;
+        width: 80%;
+        height: 80vh;
+        grid-template-areas: "a1 a2 a3 a4"
+            "a5 a6 a6 a7"
+            "a5 a8 a9 a7";
+
+        >div:nth-child(1) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            padding: 10px;
+            background-color: $color1;
+            grid-area: a1;
+        }
+
+        >div:nth-child(2) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            padding: 10px;
+            background-color: $color2;
+            grid-area: a2;
+        }
+
+        >div:nth-child(3) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            padding: 10px;
+            background-color: $color3;
+            grid-area: a3;
+        }
+
+        >div:nth-child(4) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            padding: 10px;
+            background-color: $color1;
+            grid-area: a4;
+        }
+
+        >div:nth-child(5) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            padding: 10px;
+            background-color: $color4;
+            grid-area: a5;
+        }
+
+        >div:nth-child(6) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            padding: 10px;
+            background-color: $color1;
+            grid-area: a6;
+        }
+
+        >div:nth-child(7) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            padding: 10px;
+            background-color: $color4;
+            grid-area: a7;
+        }
+
+        >div:nth-child(8) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            padding: 10px;
+            background-color: $color2;
+            grid-area: a8;
+        }
+
+        >div:nth-child(9) {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            color: white;
+            align-items: center;
+            padding: 10px;
+            background-color: $color3;
+            grid-area: a9;
+        }
+
+    }
+}
+
+$rcolor1: rgb(64, 129, 236);
+$rcolor2: rgb(255, 187, 51);
+$rcolor3: rgb(247, 51, 69);
+$rcolor4: rgb(224, 224, 224);
+
+.block2 {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+    .box2 {
+        display: grid;
+        grid-template-columns: repeat(4, 1fr);
+        gap: 20px;
+
+        >div {
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: flex-start;
+            padding: 20px;
+        }
+
+        >div:nth-child(1) {
+            background-color: $rcolor1;
+
+        }
+
+        >div:nth-child(2) {
+            background-color: $rcolor2;
+
+        }
+
+        >div:nth-child(3) {
+            background-color: $rcolor3;
+
+        }
+
+        >div:nth-child(4) {
+            background-color: $rcolor4;
+
+        }
+
+        >div:nth-child(5) {
+            background-color: $rcolor1;
+
+        }
+
+        >div:nth-child(6) {
+            background-color: $rcolor2;
+
+        }
+
+        >div:nth-child(7) {
+            background-color: $rcolor3;
+
+        }
+
+        >div:nth-child(8) {
+            background-color: $rcolor4;
+
+        }
+    }
+}
+
+@media all and (max-width:500px) {
+    .block2 {
+        .box2 {
+            grid-template-columns: repeat(1, 1fr);
+        }
+    }
+}

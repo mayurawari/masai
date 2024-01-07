@@ -1,0 +1,153 @@
+.block {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background-image: linear-gradient(to right, rgb(31, 192, 157), rgb(57, 160, 237));
+}
+.block .box {
+  margin-top: 100px;
+  margin-bottom: 100px;
+  display: grid;
+  width: 80%;
+  height: 80vh;
+  grid-template-areas: "a1 a2 a3 a4" "a5 a6 a6 a7" "a5 a8 a9 a7";
+}
+.block .box > div:nth-child(1) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(49, 50, 44);
+  grid-area: a1;
+}
+.block .box > div:nth-child(2) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(57, 160, 237);
+  grid-area: a2;
+}
+.block .box > div:nth-child(3) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(31, 192, 157);
+  grid-area: a3;
+}
+.block .box > div:nth-child(4) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(49, 50, 44);
+  grid-area: a4;
+}
+.block .box > div:nth-child(5) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(76, 96, 133);
+  grid-area: a5;
+}
+.block .box > div:nth-child(6) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(49, 50, 44);
+  grid-area: a6;
+}
+.block .box > div:nth-child(7) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(76, 96, 133);
+  grid-area: a7;
+}
+.block .box > div:nth-child(8) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(57, 160, 237);
+  grid-area: a8;
+}
+.block .box > div:nth-child(9) {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  color: white;
+  align-items: center;
+  padding: 10px;
+  background-color: rgb(31, 192, 157);
+  grid-area: a9;
+}
+
+.block2 {
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.block2 .box2 {
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  gap: 20px;
+}
+.block2 .box2 > div {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: flex-start;
+  padding: 20px;
+}
+.block2 .box2 > div:nth-child(1) {
+  background-color: rgb(64, 129, 236);
+}
+.block2 .box2 > div:nth-child(2) {
+  background-color: rgb(255, 187, 51);
+}
+.block2 .box2 > div:nth-child(3) {
+  background-color: rgb(247, 51, 69);
+}
+.block2 .box2 > div:nth-child(4) {
+  background-color: rgb(224, 224, 224);
+}
+.block2 .box2 > div:nth-child(5) {
+  background-color: rgb(64, 129, 236);
+}
+.block2 .box2 > div:nth-child(6) {
+  background-color: rgb(255, 187, 51);
+}
+.block2 .box2 > div:nth-child(7) {
+  background-color: rgb(247, 51, 69);
+}
+.block2 .box2 > div:nth-child(8) {
+  background-color: rgb(224, 224, 224);
+}
+
+@media all and (max-width: 500px) {
+  .block2 .box2 {
+    grid-template-columns: repeat(1, 1fr);
+  }
+}/*# sourceMappingURL=styles.css.map */
