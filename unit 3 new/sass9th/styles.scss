@@ -1,0 +1,242 @@
+*{
+    // background-color: rgb(242,246,255);
+    margin: 0;
+    padding: 0;
+}
+.box1{
+    background-color: white;
+    display: flex;
+    position: sticky;
+    top: 1px;
+    justify-content: space-between;
+    align-items: center;
+    padding: 20px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+    .hamburger {
+        display: block;
+        cursor: pointer;
+        padding: 10px;
+        position: relative;
+      
+        .line {
+          width: 30px;
+          height: 3px;
+          background-color: #333;
+          margin: 6px 0;
+        }
+      
+        .options {
+          display: none;
+          position: absolute;
+          top: 40px;
+          left: 0;
+          background-color: #fff;
+          box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+          padding: 10px;
+      
+          .option {
+            padding: 8px;
+            cursor: pointer;
+      
+            &:hover {
+                background-color: #f0f0f0;
+            }
+        }
+    }
+    
+    &:hover .options {
+        display: block;
+      }
+    }
+    .list-ham{
+        display: flex;
+        gap: 10px;
+        align-items: center;
+        
+        .hamitems{
+            list-style: none;
+        }
+
+        a{
+            color: black;
+            text-decoration: none;
+        }
+    }
+
+    .masai-logo{
+        img{
+            width: 100px;
+        }
+    }
+    .prep-logo{
+        img{
+            width: 100px;
+        }
+    }
+    .login-button{
+        background-color: blue;
+        color:white;
+        border: 1px;
+        border-radius: 5px;
+        padding: 5px 10px 5px 10px;
+        margin-left: 10px;
+    }
+
+    @media all  and (min-width:600px) {
+        .hamburger {
+          display: none;
+        }
+    }
+
+    @media all and (max-width:600px){    
+        .list-ham{
+            display: none;
+        }
+    }
+}
+
+.content{
+    margin: 100px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+
+    h1{
+        margin: 50px;
+    }
+}
+
+.categories{
+    display: flex;
+    justify-content: space-between;
+    align-items: centre;
+    flex-wrap: wrap;
+    
+    .category-list{
+        display: flex;
+        align-items: center;
+        
+        .category-items{
+            button{
+                margin: 10px;
+                padding: 10px;
+                border: 1px;
+                border-radius: 5px;
+            }
+            
+        }
+    }
+
+    .category-search{
+        input{
+            box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+            border: 1px;
+            border-radius: 5px;
+            padding: 10px;
+            margin: 20px;
+        }
+    }
+}
+
+footer{
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+
+    .main{
+        display: flex;
+        flex-direction: row;
+        justify-content: space-between;
+        align-items: center;
+        margin: 20px;
+        
+        .items-date{
+            border-radius: 15px;
+            box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            width: 100px;
+            height: 100px;
+            padding: 10px;
+            margin: 40px;
+        }
+        .items-data{
+            box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+            display: flex;
+            flex-direction: column;
+            justify-content: center;
+            align-items: center;
+            text-align: center;
+            padding: 30px;
+
+            .webinar-details{
+                     display: flex;
+                    align-items: center;
+                    padding: 30px;
+                    gap: 10px;
+
+                    .register-button{
+
+                        button{       
+                            border: 1px solid black;
+                            border-radius: 5px;
+                            padding: 10px 5px;
+                        }
+
+                        }
+            }
+        }
+
+    }
+
+}
+
+
+.box3{
+    background-color: rgb(3,8,26);
+    display: flex;
+    flex-wrap: wrap;
+    flex-direction: column;
+    color: white;
+    
+    .box-items{
+       display: flex;
+       flex-direction: row;
+       justify-content: space-between;
+       align-items: center;
+       margin: 20px;
+       .box-data{
+
+        .telegram-button{
+            button{
+                border: 1px;
+                border-radius: 5px;
+                padding:10px;
+            }
+        }
+
+       }
+    }
+    #grid-course{
+        display:grid;
+        grid-template-columns: repeat(3,1fr);
+        grid-template-rows: repeat(2,1fr);
+        gap: 10px;
+    }
+
+}
+
+        
+
+
+
+
+
+
+
