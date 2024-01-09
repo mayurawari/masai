@@ -1,0 +1,105 @@
+* {
+    margin: 0;
+    padding: 0;
+    background-color: black;
+}
+
+.box {
+    width: 100%;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+
+    .mercury {
+        width: 40px;
+        height: 40px;
+        border-radius: 50%;
+        background-image: url(./images/mercury.png);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .sun {
+        width: 150px;
+        height: 150px;
+        background-image: url(./images/sun.png);
+        background-size: cover;
+        background-position: center;
+
+    }
+
+    .earth {
+        margin-left: 80px;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        background-image: url(./images/earth.png);
+        background-size: cover;
+        background-position: center;
+
+        .moon {
+            position: relative;
+            right: 30px;
+            width: 30px;
+            height: 30px;
+            border-radius: 50%;
+            background-image: url(./images/moon.png);
+            background-size: cover;
+            background-position: center;
+            transform: rotateX(360deg);
+            transition: transform 5s;
+
+        }
+
+    }
+}
+
+// .mars {
+//     @include box();
+//     background-image: url(./images/mars.png);
+//     background-size: cover;
+//     background-position: center;
+
+// }
+
+// .neptune {
+//     @include box();
+//     background-image: url(./images/neptune.png);
+//     background-size: cover;
+//     background-position: center;
+
+// }
+
+// .saturn {
+//     @include box();
+//     background-image: url(./images/saturn.png);
+//     background-size: cover;
+//     background-position: center;
+
+// }
+// .uranus {
+//     @include box();
+//     background-image: url(./images/uranus.png);
+//     background-size: cover;
+//     background-position: center;
+
+// }
+
+// .jupiter {
+//     @include box();
+//     background-image: url(./images/jupiter.png);
+//     background-size: cover;
+//     background-position: center;
+
+// }
+
+// .venus {
+//     @include box();
+//     background-image: url(./images/venus.png);
+//     background-size: cover;
+//     background-position: center;
+
+// }

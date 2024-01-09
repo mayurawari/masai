@@ -1,0 +1,191 @@
+* {
+  margin: 0;
+  padding: 0;
+}
+
+.box1 {
+  background-color: white;
+  display: flex;
+  position: sticky;
+  top: 1px;
+  justify-content: space-between;
+  align-items: center;
+  padding: 20px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 3px 6px, rgba(0, 0, 0, 0.23) 0px 3px 6px;
+}
+.box1 .hamburger {
+  display: block;
+  cursor: pointer;
+  padding: 10px;
+  position: relative;
+}
+.box1 .hamburger .line {
+  width: 30px;
+  height: 3px;
+  background-color: #333;
+  margin: 6px 0;
+}
+.box1 .hamburger .options {
+  display: none;
+  position: absolute;
+  top: 40px;
+  left: 0;
+  background-color: #fff;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  padding: 10px;
+}
+.box1 .hamburger .options .option {
+  padding: 8px;
+  cursor: pointer;
+}
+.box1 .hamburger .options .option:hover {
+  background-color: #f0f0f0;
+}
+.box1 .hamburger:hover .options {
+  display: block;
+}
+.box1 .list-ham {
+  display: flex;
+  gap: 10px;
+  align-items: center;
+}
+.box1 .list-ham .hamitems {
+  list-style: none;
+}
+.box1 .list-ham a {
+  color: black;
+  text-decoration: none;
+}
+.box1 .masai-logo img {
+  width: 100px;
+}
+.box1 .prep-logo img {
+  width: 100px;
+}
+.box1 .login-button {
+  background-color: blue;
+  color: white;
+  border: 1px;
+  border-radius: 5px;
+  padding: 5px 10px 5px 10px;
+  margin-left: 10px;
+}
+@media all and (min-width: 600px) {
+  .box1 .hamburger {
+    display: none;
+  }
+}
+@media all and (max-width: 600px) {
+  .box1 .list-ham {
+    display: none;
+  }
+}
+
+.content {
+  margin: 100px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+.content h1 {
+  margin: 50px;
+}
+
+.categories {
+  display: flex;
+  justify-content: space-between;
+  align-items: centre;
+  flex-wrap: wrap;
+}
+.categories .category-list {
+  display: flex;
+  align-items: center;
+}
+.categories .category-list .category-items button {
+  margin: 10px;
+  padding: 10px;
+  border: 1px;
+  border-radius: 5px;
+}
+.categories .category-search input {
+  box-shadow: rgba(0, 0, 0, 0.05) 0px 6px 24px 0px, rgba(0, 0, 0, 0.08) 0px 0px 0px 1px;
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px;
+  margin: 20px;
+}
+
+footer {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  justify-content: space-between;
+  align-items: center;
+}
+footer .main {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+footer .main .items-date {
+  border-radius: 15px;
+  box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 100px;
+  height: 100px;
+  padding: 10px;
+  margin: 40px;
+}
+footer .main .items-data {
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  padding: 30px;
+}
+footer .main .items-data .webinar-details {
+  display: flex;
+  align-items: center;
+  padding: 30px;
+  gap: 10px;
+}
+footer .main .items-data .webinar-details .register-button button {
+  border: 1px solid black;
+  border-radius: 5px;
+  padding: 10px 5px;
+}
+
+.box3 {
+  background-color: rgb(3, 8, 26);
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: column;
+  color: white;
+}
+.box3 .box-items {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+  align-items: center;
+  margin: 20px;
+}
+.box3 .box-items .box-data .telegram-button button {
+  border: 1px;
+  border-radius: 5px;
+  padding: 10px;
+}
+.box3 #grid-course {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr);
+  grid-template-rows: repeat(2, 1fr);
+  gap: 10px;
+}/*# sourceMappingURL=styles.css.map */
