@@ -1,0 +1,136 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+    <div class="box1">
+        <div class="hamburger" onclick="toggleOptions()">
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="line"></div>
+            <div class="options" id="options">
+                <div class="option">Courses</div>
+                <div class="option">Events</div>
+                <div class="option">Learn</div>
+                <div class="option">Refer & Earn</div>
+            </div>
+        </div>
+        <!-- <div class="masai-logo"><img src="https://masai-website-images.s3.ap-south-1.amazonaws.com/logo.png" alt="MASAI"></div> -->
+        <div class="prep-logo"><img src="https://static.prepleaf.com/brand/prepleaf/prepleaf-dark.svg" alt="prepleaf">
+        </div>
+        <div class="list-ham">
+            <li class="hamitems"><a href="#">Courses</a></li>
+            <li class="hamitems"><a href="#" style="color: blue;">Events</a></li>
+            <li class="hamitems"><a href="#">Learn</a></li>
+        </div>
+
+        <div><button
+                style="background-color: lightseagreen; color: green; padding-left: 10px; padding-top: 5px; padding-bottom: 5px; padding-right: 10px; border-radius: 5px; border: 1px;">REFER
+                & EARN</button><button class="login-button">LOGIN</button></div>
+
+    </div>
+
+    <div class="content">
+        <h1>Webinars & Masterclasses</h1>
+        <p>Learn from industry experts and test your skills against peers during our <br> comprehensive events,
+            masterclasses & contests. Experience impactful learning <br> with Masai by your side. </p>
+    </div>
+
+    <div class="categories">
+        <div class="category-list">
+            <div class="category-items"><button style="background-color: blue;color: white;">All</button></div>
+            <div class="category-items"><button>Webinars</button></div>
+            <div class="category-items"><button>Masterclasses</button></div>
+        </div>
+        <div class="category-search">
+            <input type="search" placeholder="search">
+        </div>
+    </div>
+
+    <footer>
+        <div class="main">
+
+            <div class="items-date">12 <br>january</div>
+            <div class="items-image"><img
+                    src="https://masai-website-images.s3.ap-south-1.amazonaws.com/Website_Desktop_Thumbnail_c79b343227.png"
+                    alt="Masai-instructors"></div>
+
+            <div class="items-data">
+
+                <p>Introduction to the Power of Prompt Engineering (Chat GPT)</p>
+
+                <h2>WEBINAR</h2>
+
+                <div class="webinar-details">
+
+                    <span>From</span>
+
+                    <p class="time">7.00 pm</p>
+
+                    <div class="time-logo"><img style="width: 30px;"
+                            src="data:image/jpeg;base64,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"
+                            alt="#"></div>
+
+                    <p class="time">8.00 pm</p>
+
+                    <div class="register-button"><button>REGISTER</button></div>
+                </div>
+
+
+                <p> <img style="width: 20px;"
+                        src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcQEj5bLkSh5MW-YUPvr5kSM_-YeUBp_zRkbM6IQtxdRVhwzmgEcWrBKY_Vw3gUSx5Soam4&usqp=CAU"
+                        alt="#"> 1189 people have registered</p>
+            </div>
+        </div>
+    </footer>
+
+
+    <div class="box3">
+        <div class="box-items">
+            <div class="box-data"><img style="width: 200px;" src="https://static.prepleaf.com/brand/prepleaf/prepleaf-light.svg" alt="prepleaf"></div>
+            <div class="box-data">
+                <span>FOLLOW US :</span>
+                <img src="https://www.prepleaf.com/images/footer/xIcon.svg" alt="#">
+                <img src="https://www.prepleaf.com/images/footer/xIcon.svg" alt="#">
+                <img src="https://www.prepleaf.com/images/footer/xIcon.svg" alt="#">
+                <img src="https://www.prepleaf.com/images/footer/xIcon.svg" alt="#">
+            </div>
+        </div>
+        <div class="box-items">
+            <div class="box-data" id="grid-course">
+                <div class="child">Full Stack Web Development & <br> Generative AI</div>
+                <div class="child">Data Science and <br> Machine Learning</div>
+                <div class="child">CAP Express</div>
+                <div class="child">FAQ</div>
+                <div class="child">Our Team</div>
+                <div class="child">Contact Us</div>
+            </div>
+            <div class="box-data">
+                <p>Connect with a growing
+                    community of learners</p>
+                <div class="telegram-button"><button>JOIN OUR TELEGRAM</button></div>
+            </div>
+        </div>
+        <div class="box-items">
+            <div class="box-data">&COPY; 2023 BY MASSAI SCHOOL</div>
+            <div class="box-data">Privacy Policy & Terms and Conditions</div>
+        </div>
+    </div>
+
+
+    <script>
+        function toggleOptions() {
+            var options = document.getElementById("options");
+            options.style.display = (options.style.display === "block") ? "none" : "block";
+        }
+    </script>
+
+</body>
+
+</html>
